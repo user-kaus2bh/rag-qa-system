@@ -14,3 +14,4 @@ data/processed/*.json
 data/raw/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+venv/
