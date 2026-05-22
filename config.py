@@ -15,8 +15,8 @@ VECTORSTORE_DIR.mkdir(parents=True, exist_ok=True)
 
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
-LLM_PROVIDER = os.getenv("LLM_PROVIDER", "anthropic")
-LLM_MODEL = os.getenv("LLM_MODEL", "claude-3-5-sonnet-20241022")
+LLM_PROVIDER = os.getenv("LLM_PROVIDER", "gemini")
+LLM_MODEL = os.getenv("LLM_MODEL", "gemini-1.5-flash")
 
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "all-MiniLM-L6-v2")
 EMBEDDING_DIMENSION = 384
