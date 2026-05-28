@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+vectorstore/*.faiss
+vectorstore/metadata.json
+data/processed/*.json
+data/raw/*
+!data/raw/.gitkeep
+*.egg-info/
+.git/

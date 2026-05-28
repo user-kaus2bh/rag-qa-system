@@ -1,0 +1,27 @@
+[
+  {
+    "question": "What is Retrieval-Augmented Generation?",
+    "expected_answer": "Retrieval-Augmented Generation (RAG) is a technique that combines information retrieval with language model generation. It retrieves relevant documents from a knowledge base and uses them as context for the language model to generate accurate, grounded answers.",
+    "context_docs": []
+  },
+  {
+    "question": "How does semantic search work?",
+    "expected_answer": "Semantic search works by converting text into dense vector embeddings that capture meaning. Queries and documents are both converted to vectors, and similarity search finds documents whose vectors are closest to the query vector, enabling meaning-based rather than keyword-based retrieval.",
+    "context_docs": []
+  },
+  {
+    "question": "What is FAISS used for?",
+    "expected_answer": "FAISS (Facebook AI Similarity Search) is a library for efficient similarity search over dense vectors. It stores vector embeddings and performs fast nearest-neighbor search to find the most similar vectors to a query vector.",
+    "context_docs": []
+  },
+  {
+    "question": "What are text embeddings?",
+    "expected_answer": "Text embeddings are numerical vector representations of text that capture semantic meaning. Similar texts produce vectors that are close together in the embedding space, enabling mathematical comparison of text similarity.",
+    "context_docs": []
+  },
+  {
+    "question": "What is the purpose of chunking documents?",
+    "expected_answer": "Chunking splits large documents into smaller overlapping pieces so they fit within embedding model size limits and enable precise retrieval. Overlapping chunks ensure context is not lost at chunk boundaries.",
+    "context_docs": []
+  }
+]

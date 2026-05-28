@@ -24,12 +24,20 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install pymupdf python-docx python-dotenv pytest sentence-transformers faiss-cpu numpy anthropic
 
-      - name: Run tests
-        run: |
-          python -m pytest tests/ -v --tb=short
+      - name: Run ingestion tests
+        run: python -m pytest tests/test_ingestion.py -v --tb=short
 
-      - name: Check ingestion CLI
+      - name: Run retrieval tests
+        run: python -m pytest tests/test_retrieval.py -v --tb=short
+
+      - name: Run pipeline tests
+        run: python -m pytest tests/test_pipeline.py -v --tb=short
+
+      - name: Check CLI entry points
         run: |
           python ingest.py --help
+          python build_index.py --help
+          python query.py --help
+          python evaluate.py --help
